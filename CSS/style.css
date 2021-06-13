@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(104, 174, 214);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "header header"
+        "box-big-1 box5"
+        "box6 box-big-2"
+        "box-big-3 box15"
+        "footer footer";
+}
+
+.header-container p {
+    font-size: 70px;
+
+}
+
+.header {
+    padding: 1em;
+    grid-area: header;
+    background-image: url(../IMG/jossuha-theophile-hHJu9QRutZw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    filter: opacity(0.8);
+}
+
+i {
+
+    animation: turning 2s linear infinite;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.header-nav li {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    flex-basis: 90px;
+    text-transform: none;
+
+}
+
+a {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+.box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    filter: opacity(0.9);
+}
+
+
+.box-small {
+    font-weight: bold;
+    padding: 5em 0;
+}
+
+.box-small:hover .fas {
+    animation: rolling 5s infinite;
+}
+
+
+
+.box-big {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.box-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px black;
+
+}
+
+.box-empty h2 {
+    flex-basis: 5px;
+}
+
+.box-big-1 {
+    grid-area: box-big-1;
+    grid-template-areas:
+        "box1 box2"
+        "box3 box4";
+}
+
+.box1 {
+    grid-area: box1;
+    filter: opacity(1);
+}
+
+.box2 {
+    grid-area: box2;
+    background-image: url(../IMG/helena-lopes-0RETzf54hY0-unsplash.jpg);
+}
+
+.box3 {
+    grid-area: box3;
+    background-image: url(../IMG/susanne-neumair-V3S4EaKv35o-unsplash.jpg);
+    filter: opacity(1);
+
+}
+
+.box4 {
+    grid-area: box4;
+    filter: opacity(1);
+
+}
+
+.box5 {
+    grid-area: box5;
+    background-image: url(../IMG/joshua-lawrence-fiRt0wTr2VQ-unsplash.jpg);
+}
+
+.box6 {
+    grid-area: box6;
+    background-image: url(../IMG/tamas-pap-u4z759G8bjw-unsplash.jpg);
+    filter: opacity(0.8);
+
+}
+
+.box-big-2 {
+    grid-area: box-big-2;
+    grid-template-areas:
+        "box7 box8"
+        "box9 box10";
+}
+
+.box7 {
+    grid-area: box7;
+    filter: opacity(1);
+
+}
+
+.box8 {
+    grid-area: box8;
+    background-image: url(../IMG/bence-balla-schottner-aYwJaY5fPgw-unsplash.jpg);
+}
+
+.box9 {
+    grid-area: box9;
+    background-image: url(../IMG/jeremy-liem-PHDICD1m5Go-unsplash.jpg);
+}
+
+.box10 {
+    grid-area: box10;
+    filter: opacity(1);
+
+}
+
+.box-big-3 {
+    grid-area: box-big-3;
+    grid-template-areas:
+        "box11 box12"
+        "box13 box14";
+}
+
+.box11 {
+    grid-area: box11;
+    filter: opacity(1);
+
+}
+
+.box12 {
+    grid-area: box12;
+    background-image: url(../IMG/joshua-lawrence-gqpyC9DaAZ4-unsplash.jpg);
+}
+
+.box13 {
+    grid-area: box13;
+    background-image: url(../IMG/djvibe-studiox-ptnAEfL2CTA-unsplash.jpg);
+}
+
+.box14 {
+    grid-area: box14;
+    filter: opacity(1);
+
+}
+
+.box15 {
+    grid-area: box15;
+    background-image: url(../IMG/philip-kurth-mC1a49c1qws-unsplash.jpg);
+}
+
+.box2:hover,
+.box3:hover,
+.box8:hover,
+.box9:hover,
+.box12:hover,
+.box13:hover {
+    animation: skew 2s 1;
+
+}
+
+.footer {
+    grid-area: footer;
+    color: white;
+    background-color: rgb(2, 2, 80);
+    filter: opacity(0.9);
+
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-nav li {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    flex-basis: 200px;
+    padding: 1em;
+
+}
+
+.footer-icons ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-icons li {
+    display: inline-block;
+    font-size: 30px;
+    text-decoration: none;
+    flex-basis: 20px;
+    padding: .5em;
+
+}
+
+@media (max-width: 1200px) {
+    .grid-container {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .grid-container {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-gap: 7px;
+        grid-template-areas:
+            "header"
+            "box-big-1"
+            "box5"
+            "box6"
+            "box-big-2"
+            "box-big-3"
+            "box15"
+            "footer";
+    }
+
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-gap: 7px;
+        grid-template-areas:
+            "header"
+            "box5"
+            "box-big-1"
+            "box6"
+            "box-big-2"
+            "box15"
+            "box-big-3"
+            "footer";
+    }
+
+    .box-big {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .box-big-1 {
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box4"
+            "box3";
+    }
+
+    .box-big-2 {
+        grid-template-areas:
+            "box7"
+            "box8"
+            "box10"
+            "box9";
+    }
+
+    .box-big-3 {
+        grid-template-areas:
+            "box11"
+            "box12"
+            "box14"
+            "box13";
+    }
+}
+
+@keyframes rolling {
+    0% {
+        transform: translateX(0vw);
+
+    }
+
+    25% {
+        transform: translateX(-5vw);
+
+    }
+
+    50% {
+        transform: translateX(0vw);
+
+    }
+
+    75% {
+        transform: translateX(5vw);
+
+    }
+
+    100% {
+        transform: translateX(0vw);
+
+
+    }
+}
+
+@keyframes turning {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes skew {
+    0% {
+
+        transform: skew(0deg);
+    }
+
+    100% {
+
+        transform: skew(180deg);
+    }
+
+}
